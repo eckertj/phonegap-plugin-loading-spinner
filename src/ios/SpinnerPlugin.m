@@ -23,6 +23,9 @@
     spinnerSize = @"large";
 }
 -(void)show:(CDVInvokedUrlCommand*)options{
+
+    [self pluginInitialize];
+
     NSMutableDictionary* params = [options.arguments objectAtIndex:0];
 
     ;
@@ -45,7 +48,7 @@
     }
     
     if([params objectForKey:PARAM_BACKGROUND_COLOR_HEX]){
-        if([[params objectForKey:PARAM_SPINNER_SIZE] isKindOfClass:[NSString class]]){
+        if([[params objectForKey:PARAM_BACKGROUND_COLOR_HEX] isKindOfClass:[NSString class]]){
             backgroundColorHex = [params objectForKey:PARAM_BACKGROUND_COLOR_HEX];
         }
     }
