@@ -26,9 +26,11 @@ Show spinner with default arguments:
 Show spinner with optional arguments:
 
     spinnerplugin.show({
-        overlay: false,    // defaults to true
+        overlay: false,    // defaults to false
         timeout: 30,       // defaults to 0 (no timeout)
         fullscreen: true,  // defaults to false
+        color: "#FFFFFF",  // any HEX color, defaults to #FFFFFF
+        size: "large"      // choose between large and small indicator, defaluts to large
     });
 
 Hide spinner:

@@ -14,7 +14,8 @@
     UIView *background;
     BOOL showOverlay;
     int connectionTimeout;
-
+    NSString *backgroundColorHex;
+    NSString *spinnerSize;
 }
 
 -(void)hide:(CDVInvokedUrlCommand*)options;
