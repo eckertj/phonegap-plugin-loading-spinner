@@ -120,6 +120,11 @@
     [self hide:nil];
 }
 -(void)hide:(CDVInvokedUrlCommand*)options{
+
+    [UIView beginAnimations:NULL context:NULL];
+    [UIView setAnimationDuration:0.0];
+    [background setAlpha:0.0];
+    [UIView commitAnimations];
     //NSLog(@"Hiding2");
     [indicator stopAnimating];
     [background removeFromSuperview];
